@@ -3,12 +3,12 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # Copy csproj and restore dependencies
-COPY ["src/Api/Api.csproj", "src/Api/"]
-RUN dotnet restore "src/Api/Api.csproj"
+COPY ["src/backend/Api.csproj", "src/backend/"]
+RUN dotnet restore "src/backend/Api.csproj"
 
 # Copy everything else and build
-COPY src/Api/ src/Api/
-WORKDIR "/src/src/Api"
+COPY src/backend/ src/backend/
+WORKDIR "/src/src/backend"
 RUN dotnet build "Api.csproj" -c Release -o /app/build
 
 # Publish stage

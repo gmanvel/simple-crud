@@ -15,7 +15,7 @@ A complete, production-ready CRUD starter application with ASP.NET Core Web API 
 ```
 simple-crud/
 ├── src/
-│   ├── Api/
+│   ├── backend/
 │   │   ├── Domain/
 │   │   │   └── Entities/
 │   │   │       └── User.cs
@@ -39,21 +39,21 @@ simple-crud/
 │   │   ├── Program.cs
 │   │   ├── Api.csproj
 │   │   └── Dockerfile
-│   └── Api.Tests.Integration/
+│   └── tests/
 │       ├── UsersIntegrationTests.cs
 │       └── Api.Tests.Integration.csproj
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── UserManagement.jsx
-│   │   ├── App.jsx
-│   │   ├── App.css
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── Dockerfile
-│   └── nginx.conf
+│   └── frontend/
+│       ├── src/
+│       │   ├── components/
+│       │   │   └── UserManagement.jsx
+│       │   ├── App.jsx
+│       │   ├── App.css
+│       │   ├── main.jsx
+│       │   └── index.css
+│       ├── package.json
+│       ├── vite.config.js
+│       ├── Dockerfile
+│       └── nginx.conf
 ├── docker-compose.yml
 └── SimpleCrud.sln
 ```
@@ -115,7 +115,7 @@ docker-compose down -v
 
 1. Navigate to the API project:
 ```bash
-cd src/Api
+cd src/backend
 ```
 
 2. Restore dependencies:
@@ -141,7 +141,7 @@ The API will be available at http://localhost:8080
 
 1. Navigate to the frontend directory:
 ```bash
-cd frontend
+cd src/frontend
 ```
 
 2. Install dependencies:
@@ -165,7 +165,7 @@ The frontend will be available at http://localhost:5173
 
 ### Create a new migration:
 ```bash
-cd src/Api
+cd src/backend
 dotnet ef migrations add MigrationName
 ```
 
@@ -185,7 +185,7 @@ The integration tests use Testcontainers to spin up a PostgreSQL container autom
 
 1. Navigate to the test project:
 ```bash
-cd src/Api.Tests.Integration
+cd src/tests
 ```
 
 2. Run tests:
@@ -208,12 +208,12 @@ The tests will:
 
 ### Build API Docker image:
 ```bash
-docker build -f src/Api/Dockerfile -t simplecrud-api .
+docker build -f src/backend/Dockerfile -t simplecrud-api .
 ```
 
 ### Build Frontend Docker image:
 ```bash
-docker build -f frontend/Dockerfile -t simplecrud-frontend ./frontend
+docker build -f src/frontend/Dockerfile -t simplecrud-frontend ./src/frontend
 ```
 
 ### Run with Docker Compose:
