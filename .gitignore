@@ -1,0 +1,46 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+.vs/
+*.swp
+*.swo
+*~
+
+## Entity Framework
+*.db
+*.db-shm
+*.db-wal
+Migrations/
+
+## Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.npm
+.eslintcache
+
+## Environment
+.env
+.env.local
+.env.production
+.env.*.local
+
+## IDE
+.vscode/
+.idea/
+*.code-workspace
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Docker
+.dockerignore
+
+## Build artifacts
+*.log
