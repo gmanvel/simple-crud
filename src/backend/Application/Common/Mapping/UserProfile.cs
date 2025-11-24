@@ -1,8 +1,8 @@
-using Api.Application.Users.Dto;
+using Backend.Application.Users.Dto;
 using AutoMapper;
-using Api.Domain.Entities;
+using Backend.Domain.Entities;
 
-namespace Api.Application.Common.Mapping;
+namespace Backend.Application.Common.Mapping;
 
 public class UserProfile : Profile
 {

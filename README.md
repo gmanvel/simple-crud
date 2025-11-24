@@ -39,9 +39,9 @@ simple-crud/
 │   │   ├── Program.cs
 │   │   ├── Api.csproj
 │   │   └── Dockerfile
-│   └── tests/
-│       ├── UsersIntegrationTests.cs
-│       └── Api.Tests.Integration.csproj
+├── tests/
+│   ├── UsersIntegrationTests.cs
+│   └── Api.Tests.Integration.csproj
 │   └── frontend/
 │       ├── src/
 │       │   ├── components/

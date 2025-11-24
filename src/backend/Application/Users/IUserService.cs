@@ -1,6 +1,6 @@
-using Api.Application.Users.Dto;
+using Backend.Application.Users.Dto;
 
-namespace Api.Application.Users;
+namespace Backend.Application.Users;
 
 public interface IUserService
 {

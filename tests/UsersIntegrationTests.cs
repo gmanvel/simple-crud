@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Http.Json;
-using Api.Application.Users.Dto;
-using Api.Infrastructure.Persistence;
+using Backend.Application.Users.Dto;
+using Backend.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;

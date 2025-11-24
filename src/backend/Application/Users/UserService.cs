@@ -1,10 +1,10 @@
-using Api.Application.Users.Dto;
-using Api.Domain.Entities;
-using Api.Infrastructure.Persistence;
+using Backend.Application.Users.Dto;
+using Backend.Domain.Entities;
+using Backend.Infrastructure.Persistence;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.Application.Users;
+namespace Backend.Application.Users;
 
 public class UserService : IUserService
 {

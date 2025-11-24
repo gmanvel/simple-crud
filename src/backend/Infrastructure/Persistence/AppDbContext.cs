@@ -1,7 +1,7 @@
-using Api.Domain.Entities;
+using Backend.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.Infrastructure.Persistence;
+namespace Backend.Infrastructure.Persistence;
 
 public class AppDbContext : DbContext
 {

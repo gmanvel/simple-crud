@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Api.Application.Users.Dto;
+namespace Backend.Application.Users.Dto;
 
 public class UpdateUserRequest
 {

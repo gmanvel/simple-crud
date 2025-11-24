@@ -1,11 +1,11 @@
-using Api.Application.Users;
-using Api.Application.Users.Dto;
+using Backend.Application.Users;
+using Backend.Application.Users.Dto;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Presentation.Controllers;
+namespace Backend.Presentation.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/users")] // Updated route to use lowercase 'users'
 public class UsersController : ControllerBase
 {
     private readonly IUserService _userService;

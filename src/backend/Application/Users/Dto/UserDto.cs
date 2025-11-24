@@ -1,4 +1,4 @@
-namespace Api.Application.Users.Dto;
+namespace Backend.Application.Users.Dto;
 
 public class UserDto
 {
