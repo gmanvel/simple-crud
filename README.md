@@ -39,21 +39,21 @@ simple-crud/
 │   │   ├── Program.cs
 │   │   ├── Api.csproj
 │   │   └── Dockerfile
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   │   └── UserManagement.jsx
+│   │   │   ├── App.jsx
+│   │   │   ├── App.css
+│   │   │   ├── main.jsx
+│   │   │   └── index.css
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── Dockerfile
+│   │   └── nginx.conf
 ├── tests/
 │   ├── UsersIntegrationTests.cs
 │   └── Api.Tests.Integration.csproj
-│   └── frontend/
-│       ├── src/
-│       │   ├── components/
-│       │   │   └── UserManagement.jsx
-│       │   ├── App.jsx
-│       │   ├── App.css
-│       │   ├── main.jsx
-│       │   └── index.css
-│       ├── package.json
-│       ├── vite.config.js
-│       ├── Dockerfile
-│       └── nginx.conf
 ├── docker-compose.yml
 └── SimpleCrud.sln
 ```
